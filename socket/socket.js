@@ -4,12 +4,11 @@ import express from "express";
 
 const app = express();
 
-const server = http.createServer(app);
 const io = new Server(server, {
-	cors: {
-		origin: ["https://chattie-ashy.vercel.app/"],
-		methods: ["GET", "POST"],
-	},
+    cors: {
+        origin: ["https://chattie-ashy.vercel.app/", "https://live-chat-app-backend-production.up.railway.app"],
+        methods: ["GET", "POST"],
+    },
 });
 
 export const getReceiverSocketId = (receiverId) => {
