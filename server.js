@@ -9,7 +9,6 @@ import userRoutes from "./routers/userrouter.js";
 
 import { app, server } from "./socket/socket.js";
 
-
 dotenv.config();
 
 const PORT = process.env.PORT || 8080;
